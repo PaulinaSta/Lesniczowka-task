@@ -13,6 +13,9 @@ font-family: 'Roboto Slab', serif;
 body {
     color: #fff;
     min-height: 400vh;
+    overflow-x: hidden;
+    background-color: #000;
+
 }
 
 .first-line::after {
@@ -261,21 +264,17 @@ body {
 }
 
 .section1__image {
-    flex: 1;
+    /* flex: 1; */
     background-image: url(img/section1/side-view-chef-makes-raw-marbled-beef-steaks-stand\ 1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.section1__image {
-    /* min-height: 100%; */
-    /* display: none; */
+    width: 50%;
 }
 
 .section1__text-wrapper {
     flex: 1;
-    padding: 150px;
+    padding: 50px;
     /* background-color: red; */
 }
 
@@ -301,6 +300,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     margin: 50px 0;
+    width: 300px;
     /* display: none; */
 
 }
@@ -330,6 +330,24 @@ body {
 
 .section2 {
     background-color: #000;
+    position: relative;
+}
+
+.section2__heading {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section2__icon {
+    position: absolute;
+    top: -60px;
+    left: -100px;
 }
 
 .carousel {
@@ -338,13 +356,33 @@ body {
     position: relative;
 }
 
-.carousel__image-wrapper {
+.carousel__item {
     flex: 1;
     position: relative;
+    overflow: hidden;
+    /* height: 500px; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+
+.carousel__item--1 {
+    /* background-image: url(img/section2/A9bvmb8k_1u5w86s_a7k\ 1.png); */
+    opacity: .7;
+}
+
+.carousel__item--2 {
+    /* background-image: url(img/section2/A931vobz_1u5w85b_a7k\ 2.png); */
+}
+
+.carousel__item--3 {
+    /* background-image: url(img/section2/A9bvmb8k_1u5w86s_a7k\ 1.png); */
+    opacity: .3;
 }
 
 .carousel__image {
-    max-width: 100%;
+    width: 100%;
+    transform: scale(105%);
 }
 
 .carousel__text-wrapper {
@@ -386,6 +424,86 @@ body {
 .carousel__circle:hover {
     background-color: #FF0008;
 }
+
+.section3 {
+    /* height: 500px; */
+    background-image: url(img/section3/curvy-narrow-muddy-road-dark-forest-surrounded-by-greenery-little-light-coming-from\ 1.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    padding: 100px;
+}
+
+.section3__ellipse1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+}
+
+.section3__ellipse2 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+}
+
+.section3__text1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section3__text2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 68px;
+    font-family: 'DM Serif Display', serif;
+    margin: 70px 0;
+}
+
+.section3__text3 {
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 68px;
+    font-family: 'DM Serif Display', serif;
+    position: relative;
+    display: inline;
+}
+
+.section3__icon1 {
+    position: absolute;
+    right: -80px;
+    top: 10px;
+}
+
+.section3__icon2 {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    ;
+}
+
+.section3__text4 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 100px;
+    margin-top: 150px;
+}
+
+
+
+
+
+
 
 /* animations */
 

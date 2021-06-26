@@ -1,7 +1,6 @@
 <!-- Strona jest zaprojektowana na 1440 (plik Figmy), ale kodujemy ją zawsze na full (niech się responsywnie
 skaluje i wypełnia cały ekran)
 
-Dodajemy jakieś subtelne animacje, ale bez przesady, żeby nie obciążało zbytnio szybkości.
 
 W razie pytań, pisz: przemekdabrowski@redmustang.pl
 
@@ -27,8 +26,13 @@ Przemek. -->
 
 <body>
 
+    <!-- <div class="length1">1366px</div>
+    <div class="length2">1440px</div>
+    <div class="length3">1680px</div>
+    <div class="length4"></div> -->
+
     <nav class="navbar">
-        <a href="#" class="logo">
+        <a href="#" class="logo" id="home">
             <img src="img/menu/Group 45.svg" alt="" class="logo__icon">
             <img src="img/menu/Group.svg" alt="" class="logo__name">
         </a>
@@ -173,12 +177,56 @@ Przemek. -->
         </section>
 
         <section class="section4">
-
+            <img src="img/section4/rysunki 3.svg" alt="" class="section4__meat">
+            <img src="img/section4/male-butcher-posing-counter 1.png" alt="" class="section4__man">
+            <div class="section4__men-wrapper">
+                <img src="img/section4/man-cooking-meat-steak-kitchen 1.png" alt="" class="section4__man1">
+                <img src="img/section4/portrait-male-chef-cook-butcher-isolated-white-studio 1.png" alt=""
+                    class="section4__man2">
+                <img src="img/section4/Group(1).svg" alt="" class="section4__element1">
+            </div>
+            <div class="section4__text-wrapper">
+                <p class="section4__text">w zgodzie z tradycją jak za naszych ojców</p>
+                <p class="section4__names">Piotr i Wojciech</p>
+                <img src="img/section4/Group.svg" alt="" class="section4__element2">
+            </div>
         </section>
 
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+
+        <div class="footer__content">
+            <div class="footer__media">
+                <div class="media__icons">
+                    <img src="img/footer/facebook-app-symbol 2.svg" alt="" class="media__icon">
+                    <img src="img/footer/instagram 2.svg" alt="" class="media__icon">
+                    <img src="img/footer/youtube 2.svg" alt="" class="media__icon">
+                </div>
+                <div class="media__description">
+                    <p class="media__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempore
+                        architecto animi soluta itaque minus consequuntur similique exercitationem, ducimus earum
+                        dignissimos obcaecati nulla ad officiis praesentium ipsa maiores inventore amet.</p>
+                </div>
+            </div>
+            <div class="footer__logo-wrapper">
+                <img src="img/footer/Group3.svg" alt="" class="footer__logo">
+            </div>
+            <div class="footer__certificates">
+                <img src="img/footer/Group.svg" alt="" class="certificate">
+                <img src="img/footer/Group1.svg" alt="" class="certificate">
+                <img src="img/footer/Group2.svg" alt="" class="certificate">
+            </div>
+        </div>
+
+        <div class="footer__text">
+            <p class="footer__text1">Wszelkie prawa zastrzeżone Leśniczówka 2021</p>
+            <p class="footer__text2">
+                Projekt strony internetowej: redMustang&reg;
+            </p>
+        </div>
+
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>

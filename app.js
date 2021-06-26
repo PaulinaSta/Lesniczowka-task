@@ -1,5 +1,5 @@
 const menuLinkClick = () => {
-    $('.menu__link').on('click', function () {
+    $('.logo,.menu__link').on('click', function () {
 
         $('body, html').animate({
             scrollTop: $('[data-section=' + $(this).attr('id') + ']').offset().top

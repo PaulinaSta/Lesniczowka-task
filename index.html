@@ -1,12 +1,4 @@
-<!-- Strona jest zaprojektowana na 1440 (plik Figmy), ale kodujemy ją zawsze na full (niech się responsywnie
-skaluje i wypełnia cały ekran)
-
-
-W razie pytań, pisz: przemekdabrowski@redmustang.pl
-
-Przemek. -->
-
-
+<!-- Wszelkie ikony i wektory używamy w formacie SVG. -->
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -16,25 +8,32 @@ Przemek. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leśniczówka</title>
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@300;700&family=Reenie+Beanie&display=swap"
         rel="stylesheet">
+
+    <!-- style CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- <div class="length1">1366px</div> -->
+    <!-- <div class="length2">1440px</div> -->
+    <!-- <div class="length3">1680px</div> -->
+    <!-- <div class="length4"></div> -->
 
-    <!-- <div class="length1">1366px</div>
-    <div class="length2">1440px</div>
-    <div class="length3">1680px</div>
-    <div class="length4"></div> -->
+
+
+    <!-- navigation -->
 
     <nav class="navbar">
-        <a href="#" class="logo" id="home">
-            <img src="img/menu/Group 45.svg" alt="" class="logo__icon">
-            <img src="img/menu/Group.svg" alt="" class="logo__name">
+        <a href="#" class="navbar__logo-wrapper" id="home">
+            <img src="img/navigation/logo.svg" alt="" class="navbar__logo">
+            <img src="img/navigation/name.svg" alt="" class="navbar__name">
         </a>
         <ul class="menu">
             <li class="menu__item"><a href="#home" class="menu__link" id="home">home</a></li>
@@ -44,28 +43,30 @@ Przemek. -->
             <li class="menu__item"><a href="#contact" class="menu__link" id="contact">kontakt</a></li>
         </ul>
         <div class="language">
-            <img src="img/menu/poland (1).svg" alt="" class="language__item language__item--active">
-            <img src="img/menu/germany.svg" alt="" class="language__item">
-            <img src="img/menu/v.svg" alt="" class="language__change">
+            <img src="img/navigation/poland.svg" alt="" class="language__item language__item--active">
+            <img src="img/navigation/germany.svg" alt="" class="language__item">
+            <img src="img/navigation/arrow.svg" alt="" class="language__arrow">
         </div>
     </nav>
 
+    <!-- header -->
+
     <header class="header" data-section="home">
-        <img src="img/header/logo-w-tle.svg" alt="" class="header__logo">
-        <img src="img/header/Group 33.svg" alt="" class="header__meat1">
-        <img src="img/header/Group 34.svg" alt="" class="header__meat2">
+        <!-- background elements -->
+        <img src="img/header/logo.svg" alt="" class="header__logo">
+        <img src="img/header/meat1.svg" alt="" class="header__meat1">
+        <img src="img/header/meat2.svg" alt="" class="header__meat2">
         <img src="img/header/pepper.svg" alt="" class="header__pepper">
-        <img src="img/header/kielbasy.png" alt="" class="header__sausages">
-
-
+        <img src="img/header/sausages.png" alt="" class="header__sausages">
+        <!-- button -->
         <a href="#" class="button">
-            <img src="img/header/Vector.svg" alt="" class="button__icon">
+            <img src="img/header/cart.svg" alt="" class="button__icon">
             <div class="button__element">
                 <p class="button__text"><span class="first-line">Sklep</span> on-line</p>
             </div>
         </a>
 
-        <div class="header__text">
+        <div class="header__text-wrapper">
             <h1 class="header__heading"><span class="first-line">Mięso prosto</span> z natury</h1>
             <p class="header__description">W Leśniczówce od blisko 30 lat kultywujemy
                 <span class="bold">najlepszą tradycję</span> i <span class="bold">sprawdzone
@@ -73,35 +74,35 @@ Przemek. -->
             </p>
         </div>
 
-        <div class="header__features">
+        <div class="header__features-wrapper">
             <div class="feature">
-                <img src="img/header/Rectangle 43.svg" alt="" class="feature__element">
-                <img src="img/header/Group.svg" alt="" class="feature__icon">
+                <img src="img/header/shape.svg" alt="" class="feature__shape">
+                <img src="img/header/certificate.svg" alt="" class="feature__certificate">
                 <p class="feature__description">mięso <span class="bold">bez antybiotyków i hormonu wzrostu</span></p>
             </div>
             <div class="feature">
-                <img src="img/header/Rectangle 43.svg" alt="" class="feature__element">
-                <img src="img/header/Group.svg" alt="" class="feature__icon">
+                <img src="img/header/shape.svg" alt="" class="feature__shape">
+                <img src="img/header/certificate.svg" alt="" class="feature__certificate">
                 <p class="feature__description">mięso <span class="bold">nie z chodowli, bez pasz GMO</span></p>
             </div>
             <div class="feature">
-                <img src="img/header/Rectangle 43.svg" alt="" class="feature__element">
-                <img src="img/header/Group.svg" alt="" class="feature__icon">
+                <img src="img/header/shape.svg" alt="" class="feature__shape">
+                <img src="img/header/certificate.svg" alt="" class="feature__certificate">
                 <p class="feature__description">wdrożony <span class="bold">system HACCP</span></p>
             </div>
             <div class="feature">
-                <img src="img/header/Rectangle 43.svg" alt="" class="feature__element">
-                <img src="img/header/Group.svg" alt="" class="feature__icon">
+                <img src="img/header/shape.svg" alt="" class="feature__shape">
+                <img src="img/header/certificate.svg" alt="" class="feature__certificate">
                 <p class="feature__description">każda parti mięsa <span class="bold">badana przed rozbiorem</span></p>
             </div>
             <div class="feature">
-                <img src="img/header/Rectangle 43.svg" alt="" class="feature__element">
-                <img src="img/header/Group.svg" alt="" class="feature__icon">
+                <img src="img/header/shape.svg" alt="" class="feature__shape">
+                <img src="img/header/certificate.svg" alt="" class="feature__certificate">
                 <p class="feature__description">firma <span class="bold">z polskim kapitałem</span></p>
             </div>
             <div class="feature">
-                <img src="img/header/Rectangle 43.svg" alt="" class="feature__element">
-                <img src="img/header/Group.svg" alt="" class="feature__icon">
+                <img src="img/header/shape.svg" alt="" class="feature__shape">
+                <img src="img/header/certificate.svg" alt="" class="feature__certificate">
                 <p class="feature__description">mięso <span class="bold">wyłącznie z polskich lasów</span></p>
             </div>
 

@@ -70,8 +70,25 @@ body {
     white-space: pre;
 }
 
-.bold {
+.bold-text {
     font-weight: 700;
+}
+
+.letter-spacing-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.section__heading {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62px;
 }
 
 /* navigation */
@@ -295,7 +312,7 @@ body {
 
 .section1 {
     display: flex;
-    background-image: url(img/section1/wooden-table-with-dark-smoky\ 1.png);
+    background-image: url(img/section1/smoky.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -303,61 +320,31 @@ body {
 }
 
 .section1__image {
-    /* flex: 1; */
-    background-image: url(img/section1/side-view-chef-makes-raw-marbled-beef-steaks-stand\ 1.png);
+    flex-basis: 50%;
+    background-image: url(img/section1/steaks.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
 }
 
 .section1__text-wrapper {
     flex: 1;
     padding: 50px;
-    /* background-color: red; */
+    margin-bottom: 50px;
 }
 
 .section1__text {
-    font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
     text-transform: uppercase;
-    /* display: none; */
-}
-
-.section1__heading {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 62px;
-    font-family: 'DM Serif Display', serif;
-    /* display: none; */
-
 }
 
 .section1__description {
     font-family: 'Roboto Slab', serif;
-    font-weight: 300;
     font-size: 16px;
+    font-weight: 300;
     line-height: 24px;
     margin: 50px 0;
-    width: 300px;
-    /* display: none; */
-
-}
-
-.section__link {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    /* display: none; */
-
-}
-
-.section__link:hover .section__arrow {
-    margin: 0 10px 0 10px;
 }
 
 .section__arrow {
@@ -365,57 +352,55 @@ body {
     transition: .3s;
 }
 
+.letter-spacing-text:hover .section__arrow {
+    margin: 0 10px 0 10px;
+}
+
+/* section2 */
 
 .section2 {
-    background-color: #000;
     position: relative;
 }
 
-.section2__heading {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 62px;
+.section__heading--2 {
     position: absolute;
     top: -100px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.section2__icon {
+.section2__element {
     position: absolute;
     top: -60px;
     left: -100px;
 }
 
 .carousel {
-    display: flex;
-    width: 100%;
     position: relative;
+    width: 100%;
+    display: flex;
 }
 
 .carousel__item {
     flex: 1;
     position: relative;
     overflow: hidden;
-    /* height: 500px; */
-    /* background-position: center; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
+    cursor: pointer;
+    transition: .3s;
 }
 
 .carousel__item--1 {
-    /* background-image: url(img/section2/A9bvmb8k_1u5w86s_a7k\ 1.png); */
-    opacity: .7;
+    opacity: .5;
 }
 
-.carousel__item--2 {
-    /* background-image: url(img/section2/A931vobz_1u5w85b_a7k\ 2.png); */
-}
+.carousel__item--2 {}
 
 .carousel__item--3 {
-    /* background-image: url(img/section2/A9bvmb8k_1u5w86s_a7k\ 1.png); */
-    opacity: .3;
+    opacity: .5;
+}
+
+.carousel__item:hover {
+    opacity: 1;
 }
 
 .carousel__image {
@@ -425,11 +410,11 @@ body {
 
 .carousel__text-wrapper {
     position: absolute;
-    left: 0;
     bottom: 0;
-    background-color: #17181A99;
+    left: 0;
     width: 100%;
     padding: 30px;
+    background-color: #17181A99;
 }
 
 .carousel__text {
@@ -438,108 +423,98 @@ body {
     line-height: 62px;
 }
 
-.section__link--carousel {
+.letter-spacing-text--carousel {
     display: block;
     text-align: right;
 }
 
 .carousel__circle {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: #FF000890;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
     cursor: pointer;
     transition: .3s;
 }
 
 .carousel__circle:hover {
-    background-color: #FF0008;
+    background-color: #FF0008aa;
 }
 
+/* section3 */
+
 .section3 {
-    /* height: 500px; */
-    background-image: url(img/section3/curvy-narrow-muddy-road-dark-forest-surrounded-by-greenery-little-light-coming-from\ 1.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     position: relative;
     text-align: center;
     padding: 100px;
+    background-image: url(img/section3/forest.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .section3__ellipse1 {
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    position: absolute;
     width: 100%;
 }
 
 .section3__ellipse2 {
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    position: absolute;
     width: 100%;
 }
 
-.section3__text1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.section3__text2 {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 68px;
-    font-family: 'DM Serif Display', serif;
-    margin: 70px 0;
+.section__heading--3 {
+    margin: 50px 0;
 }
 
 .section3__text3 {
-    font-weight: 400;
-    font-size: 110px;
-    line-height: 68px;
-    font-family: 'DM Serif Display', serif;
     position: relative;
+    font-family: 'DM Serif Display', serif;
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 68px;
     display: inline;
 }
 
-.section3__icon1 {
+.section3__element1 {
     position: absolute;
-    right: -80px;
     top: 10px;
+    right: -80px;
 }
 
-.section3__icon2 {
+.section3__element2 {
     position: absolute;
-    left: 0;
     bottom: -30px;
-    ;
+    left: 0;
 }
 
 .section3__text4 {
     font-family: 'Roboto Slab', serif;
-    font-weight: 300;
     font-size: 16px;
+    font-weight: 300;
     line-height: 24px;
     padding: 0 100px;
     margin-top: 150px;
 }
 
+/* section4 */
+
 .section4 {
-    background-color: #1F1C1D;
     position: relative;
+    background-color: #1F1C1D;
     overflow: hidden;
 }
 
@@ -549,17 +524,13 @@ body {
     left: -50px;
 }
 
-.section4__man {
+.section4__old-man {
     position: absolute;
     top: -100px;
     right: 0;
 }
 
 .section4__men-wrapper {
-    /* position: relative; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* background-color: #fff; */
     height: 700px;
     overflow: hidden;
 }
@@ -592,14 +563,6 @@ body {
     margin: 100px;
 }
 
-.section4__text {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
 .section4__names {
     font-family: 'Reenie Beanie', cursive;
     font-size: 64px;
@@ -613,6 +576,8 @@ body {
     right: -30px;
 }
 
+/* footer */
+
 .footer {
     background-color: #17181A;
     padding: 50px 50px 20px 50px;
@@ -620,17 +585,16 @@ body {
 
 .footer__content {
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.footer__media {
+.footer__media-wrapper {
     flex: 1;
     align-self: flex-start;
 }
 
-.media__icons {
+.media {
     display: flex;
     align-items: center;
 }
@@ -641,21 +605,20 @@ body {
 
 .media__description {
     font-family: 'Roboto Slab', serif;
-    font-weight: 300;
     font-size: 14px;
+    font-weight: 300;
     line-height: 22px;
     margin-top: 30px;
     padding-right: 200px;
 }
-
 
 .footer__logo {
     flex: 1;
 }
 
 .footer__certificates {
-    display: flex;
     flex: 1;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -663,18 +626,13 @@ body {
     margin-left: 30px;
 }
 
-.footer__text {
+.footer__text-wrapper {
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    font-size: 12px;
 }
-
-
-
-
-
 
 /* animations */
 
@@ -687,3 +645,5 @@ body {
         transform: translateY(50px);
     }
 }
+
+/* media queries */

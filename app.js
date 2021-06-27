@@ -8,8 +8,4 @@ const menuLinkClick = () => {
     });
 }
 
-const app = () => {
-    menuLinkClick();
-}
-
 app();

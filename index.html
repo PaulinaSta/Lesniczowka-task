@@ -15,6 +15,8 @@
         rel="stylesheet">
 
     <!-- style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -116,10 +118,10 @@
                 <p class="section1__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ea
                     ad tempore nesciunt sunt ducimus beatae iste officia. Unde, nemo eum quia aut ipsum cupiditate nihil
                     molestias incidunt voluptatibus officia.</p>
-                    <div class="arrow-link-wrapper">
-                        <img src="img/arrow.svg" alt="" class="section__arrow">
-                        <a href="#" class="letter-spacing-text">dowiedz się więcej o nas</a>
-                    </div>
+                <div class="arrow-link-wrapper">
+                    <img src="img/arrow.svg" alt="" class="section__arrow">
+                    <a href="#" class="letter-spacing-text">dowiedz się więcej o nas</a>
+                </div>
             </div>
         </section>
 
@@ -130,8 +132,73 @@
                     class="section2__element"> poznaj
                 nasze
                 specjały</h2>
-            <div class="carousel">
-                <div class="carousel__item carousel__item--1">
+
+
+
+
+            <!-- glidejs -->
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides carousel">
+                        <li class="glide__slide carousel__item carousel__item--1">
+                            <img src="img/section2/image1.png" alt="" class="carousel__image">
+                            <div class="carousel__text-wrapper">
+                                <p class="carousel__text">tradycyjne</p>
+                                <div class="arrow-link-wrapper">
+                                    <img src="img/arrow.svg" alt="" class="section__arrow">
+                                    <a href="#" class="letter-spacing-text">zobacz</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide carousel__item carousel__item--2">
+                            <img src="img/section2/image2.png" alt="" class="carousel__image">
+                            <div class="carousel__text-wrapper">
+                                <p class="carousel__text">dojrzewające</p>
+                                <div class="arrow-link-wrapper">
+                                    <img src="img/arrow.svg" alt="" class="section__arrow">
+                                    <a href="#" class="letter-spacing-text">zobacz</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide carousel__item carousel__item--3">
+                            <img src="img/section2/image1.png" alt="" class="carousel__image">
+                            <div class="carousel__text-wrapper">
+                                <p class="carousel__text">wędzonki</p>
+                                <div class="arrow-link-wrapper">
+                                    <img src="img/arrow.svg" alt="" class="section__arrow">
+                                    <a href="#" class="letter-spacing-text">zobacz</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide carousel__item carousel__item--4">
+                            <img src="img/section2/image2.png" alt="" class="carousel__image">
+                            <div class="carousel__text-wrapper">
+                                <p class="carousel__text">dojrzewające</p>
+                                <div class="arrow-link-wrapper">
+                                    <img src="img/arrow.svg" alt="" class="section__arrow">
+                                    <a href="#" class="letter-spacing-text">zobacz</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button> -->
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <img src="img/section2/right.svg" alt="" class="glide__img">
+                    </button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- <div class="carousel">
+            <div class="carousel__item carousel__item--1">
                     <img src="img/section2/image1.png" alt="" class="carousel__image">
                     <div class="carousel__text-wrapper">
                         <p class="carousel__text">tradycyjne</p>
@@ -141,28 +208,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel__item carousel__item--2">
+            <div class="carousel__item carousel__item--2">
                     <img src="img/section2/image2.png" alt="" class="carousel__image">
                     <div class="carousel__text-wrapper">
                         <p class="carousel__text">dojrzewające</p>
                         <div class="arrow-link-wrapper">
                             <img src="img/arrow.svg" alt="" class="section__arrow">
                             <a href="#" class="letter-spacing-text">zobacz</a>
-                        </div>                    </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel__item carousel__item--3">
+            <div class="carousel__item carousel__item--3">
                     <img src="img/section2/image1.png" alt="" class="carousel__image">
                     <div class="carousel__text-wrapper">
                         <p class="carousel__text">wędzonki</p>
                         <div class="arrow-link-wrapper">
                             <img src="img/arrow.svg" alt="" class="section__arrow">
                             <a href="#" class="letter-spacing-text">zobacz</a>
-                        </div>                    </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel__circle">
+
+
+            <div class="carousel__circle">
                     <img src="img/section2/right.svg" alt="" class="carousel__arrow">
                 </div>
-            </div>
+            </div> -->
+
         </section>
 
         <!-- section3 -->
@@ -188,9 +260,9 @@
         <section class="section4">
             <img src="img/section4/eat.svg" alt="" class="section4__meat">
             <img src="img/section4/old-man.png" alt="" class="section4__old-man">
-                <img src="img/section4/man1.png" alt="" class="section4__man1">
-                <img src="img/section4/man2.png" alt="" class="section4__man2">
-                <img src="img/section4/element1.svg" alt="" class="section4__element1">
+            <img src="img/section4/man1.png" alt="" class="section4__man1">
+            <img src="img/section4/man2.png" alt="" class="section4__man2">
+            <img src="img/section4/element1.svg" alt="" class="section4__element1">
             <div class="section4__text-wrapper">
                 <p class="letter-spacing-text">w zgodzie z tradycją jak za naszych ojców</p>
                 <p class="section4__names">Piotr i Wojciech</p>
@@ -236,6 +308,7 @@
 
     <!-- JavaScript, jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
     <script src="app.js"></script>
 </body>
 

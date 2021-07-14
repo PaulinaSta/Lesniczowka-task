@@ -13,3 +13,13 @@ const app = () => {
 }
 
 app();
+
+
+new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    focusAt: 'center',
+    gap: 0,
+    animationDuration: 800,
+}).mount();
